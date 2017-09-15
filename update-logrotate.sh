@@ -200,7 +200,6 @@ do
           unset new_log
           new_log="${f} {"
           new_log="${new_log}\n  su ${file_owner_user} ${file_owner_group}"
-          new_log="${new_log}\n  copytruncate"
           new_log="${new_log}\n  rotate ${logrotate_copies}"
           new_log="${new_log}\n  missingok"
           if [ -n "${logrotate_logfile_compression}" ]; then
@@ -276,7 +275,6 @@ do
           unset new_log
           new_log="${f} {"
           new_log="${new_log}\n  su ${file_owner_user} ${file_owner_group}"
-          new_log="${new_log}\n  copytruncate"
           new_log="${new_log}\n  rotate ${logrotate_copies}"
           new_log="${new_log}\n  missingok"
           if [ -n "${logrotate_logfile_compression}" ]; then
